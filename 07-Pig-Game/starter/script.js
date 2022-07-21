@@ -26,7 +26,7 @@ function init() {
   activePlayer = 0;
   playing = true; // State variable. Used here to disable buttons when game is finished
 
-  score0El.textContent = 0;
+  score0El.sdsd = 0;
   score1El.textContent = 0;
   current0El.textContent = 0;
   current1El.textContent = 0;
