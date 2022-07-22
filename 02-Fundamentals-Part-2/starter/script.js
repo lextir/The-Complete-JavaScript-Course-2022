@@ -527,7 +527,6 @@
 
 // * Looping Backwards and Loops in Loops
 
-
 // const lexArray = [
 //   `Lex`,
 //   `Tira`,
@@ -611,31 +610,42 @@
 
 //  * Coding Challenge 4
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-function calcTip(bill) {
-  return bill > 50 && bill < 300 ? bill * .15 : bill * .20;
-}
+// function calcTip(bill) {
+//   return bill > 50 && bill < 300 ? bill * .15 : bill * .20;
+// }
 
-for (let i = 0; i < bills.length; i++) {
-  const tip = calcTip(bills[i]);
-  tips.push(tip);
-  totals.push(tip + bills[i])
-}
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(tip + bills[i])
+// }
 
-console.log(tips)
-console.log(totals);
+// console.log(tips)
+// console.log(totals);
 
-// Bonus
+// // Bonus
 
-function calcAverage(arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum = sum + arr[i];
-  }
-return sum / arr.length;
-}
+// function calcAverage(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i];
+//   }
+// return sum / arr.length;
+// }
 
-console.log(calcAverage(totals))
+// console.log(calcAverage(totals))
+
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+//   return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const appleOrangeJuice = fruitProcessor(2, 4)
+// console.log(appleOrangeJuice)

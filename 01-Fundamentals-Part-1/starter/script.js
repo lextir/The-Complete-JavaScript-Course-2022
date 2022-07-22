@@ -96,8 +96,6 @@ Test data:
 // const markHigherBMI = bmiMark > bmiJohn;
 // console.log(markHigherBMI)
 
-
-
 //  Strings and Template Literals
 
 // const firstName = 'Jonas';
@@ -351,7 +349,52 @@ Test data:
 
 // Coding Challenge #4
 
-const bill = 40;
-const tip = bill > 50 && bill < 300 ? bill * .15 : bill * .20;
+// const bill = 40;
+// const tip = bill > 50 && bill < 300 ? bill * .15 : bill * .20;
 
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+// Coding Challenge 1
+
+// const weightMark = 78;
+// const heightMark = 1.69;
+// const weightJohn = 92;
+// const heightJohn = 1.95;
+
+// const bmiMark = weightMark / heightMark ** 2;
+// const bmiJohn = weightJohn / heightJohn ** 2;
+
+// const markHigherBMI = bmiMark > bmiJohn;
+
+// console.log(markHigherBMI);
+
+// Coding Challenge 2
+
+// if (markHigherBMI) {
+//   console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})`)
+// } else {
+//   console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})`)
+// }
+
+// Coding Challenge 3
+
+// const dolphinsScore = (96 + 108 + 89) / 3;
+// const koalasScore = (88 + 91 + 110) / 3;
+
+// if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
+//   console.log('Dolphins win!');
+// } else if (dolphinsScore === koalasScore && dolphinsScore >= 100) {
+//   console.log("It's a draw!");
+// } else {
+//   console.log('Koalas win!');
+// }
+
+// const day = 'monday';
+
+// switch (day) {
+//   case 'monday':
+//     console.log("It's Monday");
+//     break;
+//   case 'tuesday':
+//     console.log("It's Tuesday");
+// }
