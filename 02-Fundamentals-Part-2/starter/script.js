@@ -657,18 +657,63 @@
 // const age1 = calcAge1(1979);
 // console.log(age1);
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const avgDolphins = calcAverage(44, 23, 71);
-const avgKoalas = calcAverage(65, 54, 49);
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const avgDolphins = calcAverage(44, 23, 71);
+// const avgKoalas = calcAverage(65, 54, 49);
 
-function checkWinner(avgDolphins, avgKoalas) {
-  if (avgDolphins >= avgKoalas * 2) {
-    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= avgDolphins * 2) {
-    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
-  } else {
-    console.log('Nobody wins');
-  }
-}
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins >= avgKoalas * 2) {
+//     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= avgDolphins * 2) {
+//     console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+//   } else {
+//     console.log('Nobody wins');
+//   }
+// }
 
-checkWinner(avgDolphins, avgKoalas);
+// checkWinner(avgDolphins, avgKoalas);
+
+// const friends = ['michael', 'steven', 'peter'];
+
+// console.log(friends.includes('michael'))
+
+// function calcTip(bill) {
+//   if (bill > 50 && bill < 300) {
+//     const tip = bill * 0.15;
+//     return tip;
+//   } else {
+//     const tip = bill * 0.2;
+//     return tip;
+//   }
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(total);
+
+const lexArray = [
+  'lex',
+  'tirajoh',
+  2022 - 1979,
+  'student',
+  ['jan', 'klaas', 'tim'],
+];
+
+// objects: for unordered data. uses curly braces.
+const lexObject = {
+  firstName: 'Lex',
+  lastName: 'Tirajoh',
+  age: 2022 - 1979,
+  job: 'student',
+  friends: ['jan', 'klaas', 'tim'],
+};
+
+console.log(lexObject)
+
+console.log(lexObject.lastName)
+
+console.log(lexObject.friends[1])
+
+console.log(`${lexObject.firstName} has ${lexObject.friends.length} friends and his best friend is ${lexObject.friends[0]}`)
