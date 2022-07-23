@@ -649,3 +649,26 @@
 
 // const appleOrangeJuice = fruitProcessor(2, 4)
 // console.log(appleOrangeJuice)
+
+// function calcAge1(birthYear) {
+//   return 2022 - birthYear;
+// }
+
+// const age1 = calcAge1(1979);
+// console.log(age1);
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const avgDolphins = calcAverage(44, 23, 71);
+const avgKoalas = calcAverage(65, 54, 49);
+
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= avgKoalas * 2) {
+    console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= avgDolphins * 2) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+  } else {
+    console.log('Nobody wins');
+  }
+}
+
+checkWinner(avgDolphins, avgKoalas);
