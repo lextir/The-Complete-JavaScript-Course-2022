@@ -693,27 +693,123 @@
 
 // console.log(total);
 
-const lexArray = [
-  'lex',
-  'tirajoh',
-  2022 - 1979,
-  'student',
-  ['jan', 'klaas', 'tim'],
-];
-
 // objects: for unordered data. uses curly braces.
-const lexObject = {
-  firstName: 'Lex',
-  lastName: 'Tirajoh',
-  age: 2022 - 1979,
-  job: 'student',
-  friends: ['jan', 'klaas', 'tim'],
-};
+// const lexObject = {
+//   firstName: 'Lex',
+//   lastName: 'Tirajoh',
+//   birthYear: 1979,
+//   job: 'student',
+//   friends: ['jan', 'klaas', 'tim'],
+//   hasDriversLicense: true,
 
-console.log(lexObject)
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
+// };
 
-console.log(lexObject.lastName)
+// console.log(lexObject)
 
-console.log(lexObject.friends[1])
+// console.log(lexObject.lastName)
 
-console.log(`${lexObject.firstName} has ${lexObject.friends.length} friends and his best friend is ${lexObject.friends[0]}`)
+// console.log(lexObject.friends[1])
+
+// console.log(`${lexObject.firstName} has ${lexObject.friends.length} friends and his best friend is ${lexObject.friends[0]}`)
+
+// console.log(lexObject.calcAge());
+
+// console.log(`${lexObject.firstName} is a ${lexObject.age}-year old ${lexObject.job} and he has ${this.hasDriversLicense ? 'a' : 'not' } driver's license`)
+
+// const markObject = {
+//   firstName: 'Mark',
+//   lastName: 'Miller',
+//   weight: 78,
+//   height: 1.69,
+
+//   calcBMI: function () {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
+
+// const johnObject = {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   weight: 92,
+//   height: 1.95,
+
+//   calcBMI: function () {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
+
+// markObject.calcBMI();
+// johnObject.calcBMI();
+
+// if (markObject.bmi > johnObject.bmi) {
+//   console.log(
+//     `${markObject.firstName}'s BMI (${markObject.bmi}) is higher than ${johnObject.firstName}'s (${johnObject.bmi})`
+//   );
+// } else {
+//   {
+//     console.log(
+//       `${johnObject.firstName}'s BMI (${johnObject.bmi}) is higher than ${markObject.firstName}'s (${markObject.bmi})`
+//     );
+//   }
+// }
+
+// const lexArray = [
+//   'lex',
+//   'tirajoh',
+//   2022 - 1979,
+//   'student',
+//   ['jan', 'klaas', 'piet'],
+// ];
+
+// // for (let i = 0; i < lexArray.length; i++) {
+// //   console.log(lexArray[i]);
+// // }
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2022 - years[i]);
+// }
+
+// console.log(ages);
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+function calcTip(bill) {
+  if (bill > 50 && bill < 300) {
+    const tip = bill * 0.15;
+    return tip;
+  } else {
+    const tip = bill * 0.2;
+    return tip;
+  }
+}
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+
+  tips.push(tip);
+  totals.push(bills[i] + tip);
+  console.log(totals);
+}
+
+function calcAverage(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum / arr.length;
+}
+
+console.log(calcAverage(totals));
