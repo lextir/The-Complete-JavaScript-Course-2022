@@ -813,4 +813,3 @@ function calcAverage(arr) {
 }
 
 console.log(calcAverage(totals));
-
