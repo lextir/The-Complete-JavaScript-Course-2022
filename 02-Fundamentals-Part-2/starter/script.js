@@ -811,5 +811,4 @@ function calcAverage(arr) {
 
   return sum / arr.length;
 }
-
-console.log(calcAverage(totals));
+console.log(calcAverage(totals));    
